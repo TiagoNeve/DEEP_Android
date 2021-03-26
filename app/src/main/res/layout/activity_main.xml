@@ -7,16 +7,15 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/androidparty" />
+        app:srcCompat="@drawable/crescent_moon_by_kuldarleement_d97kjpf_fullview" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,7 +26,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/happy_birthday_text"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +41,7 @@
         android:fontFamily="sans-serif-light"
         android:importantForAccessibility="yes"
         android:text="@string/signature_text"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
