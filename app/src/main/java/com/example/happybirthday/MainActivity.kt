@@ -14,9 +14,24 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.button)
 
         rollButton.setOnClickListener {
-            val resultTextView: TextView = findViewById(R.id.resultText)
-            resultTextView.text = "6"
+            rollDice()
+        }
+    }
+//    FUNÇÕES
+//    Função de rodar o dado
+    private fun rollDice() {
+        val dice = Dice(6)
+        val diceRoll = dice.roll()
+        val resultTextView: TextView = findViewById(R.id.resultText)
 
+        resultTextView.text = diceRoll.toString()
+    }
+
+//    CLASSES
+//   Criação da classe Dado
+    class Dice(private val numSides: Int) {
+        fun roll(): Int {
+            return (1..numSides).random()
         }
     }
 }
