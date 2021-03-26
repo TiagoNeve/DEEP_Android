@@ -4,4 +4,6 @@
     <string name="signature_text"><![CDATA[De, Tiago <3]]></string>
     <string name="hello_world">Hello World</string>
     <string name="jogar">Jogar</string>
+    <string name="lados_6">Dado de 6 lados</string>
+    <string name="lados_20">Dado de 20 lados</string>
 </resources>

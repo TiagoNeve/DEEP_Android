@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,13 +21,20 @@ class MainActivity : AppCompatActivity() {
     //    FUNÇÕES
 //    Função de rodar o dado
     private fun rollDice() {
-        // Cria um objeto dice e chama o método roll()
-        val dice = Dice(6)
-        val diceRoll = dice.roll()
+        // Cria um objeto dado de 6 lados e chama o método roll()
+        val dice6 = Dice(6)
+        val dice6Roll = dice6.roll()
+
+        // Cria um objeto dado de 20 lados e chama o método roll()
+        val dice20 = Dice(20)
+        val dice20Roll = dice20.roll()
 
         // Cria um ponto na memória para view e modifica o text atribuindo o valor do método roll.
-        val resultTextView: TextView = findViewById(R.id.resultText)
-        resultTextView.text = diceRoll.toString()
+        val resultTextDado6: TextView = findViewById(R.id.resultTextDado6)
+        resultTextDado6.text = dice6Roll.toString()
+
+        val resultTextDado20: TextView = findViewById(R.id.resultTextDado20)
+        resultTextDado20.text = dice20Roll.toString()
     }
 
     //    CLASSES
